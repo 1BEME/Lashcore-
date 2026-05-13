@@ -18,7 +18,7 @@ export default function Hero() {
             referrerPolicy="no-referrer"
           />
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-matte-black/20 to-matte-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-matte-black/20 to-matte-black noir-vignette" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
@@ -37,7 +37,7 @@ export default function Hero() {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-              className="block text-7xl md:text-9xl lg:text-[11rem] text-white font-serif tracking-tighter leading-[0.8] mb-4"
+              className="block text-6xl md:text-9xl lg:text-[11rem] text-white font-serif tracking-tighter leading-[0.8] mb-4"
             >
               Beyond
             </motion.span>
@@ -45,7 +45,7 @@ export default function Hero() {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="block text-7xl md:text-9xl lg:text-[11rem] text-rose-gold font-serif italic tracking-tighter leading-[0.8] opacity-90"
+              className="block text-6xl md:text-9xl lg:text-[11rem] text-rose-gold font-serif italic tracking-tighter leading-[0.8] opacity-90"
             >
               Elegance
             </motion.span>

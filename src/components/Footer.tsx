@@ -39,10 +39,10 @@ export default function Footer() {
         </div>
         
         <div className="pt-10 border-t border-matte-black/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-[10px] uppercase tracking-widest opacity-30">© 2026 LASHCORE STUDIO. All rights reserved.</p>
-          <div className="flex items-baseline space-x-2">
-             <span className="text-[10px] uppercase tracking-widest opacity-30">Designed for beauty</span>
-             <div className="w-8 h-[1px] bg-rose-gold" />
+          <p className="text-[10px] uppercase tracking-widest opacity-30">© 2026 NOIR LASHCORE. ALL RIGHTS RESERVED.</p>
+          <div className="flex items-center space-x-6">
+             <div className="w-12 h-[1px] bg-rose-gold" />
+             <span className="text-[9px] uppercase tracking-[0.5em] opacity-40 font-bold">Noir Collective Studio</span>
           </div>
         </div>
       </div>
