@@ -20,6 +20,7 @@ import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
 import SkincorePage from './pages/SkincorePage';
+import PoliciesPage from './pages/PoliciesPage';
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -88,6 +89,7 @@ function AppContent() {
                 <Route path="/academy" element={<CoursesPage />} />
                 <Route path="/skincore" element={<SkincorePage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                <Route path="/policies" element={<PoliciesPage />} />
               </Routes>
             </motion.div>
           </AnimatePresence>

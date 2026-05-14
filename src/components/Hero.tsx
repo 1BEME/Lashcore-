@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 
@@ -12,13 +13,13 @@ export default function Hero() {
           className="w-full h-full"
         >
           <img 
-            src="https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?auto=format&fit=crop&q=80&w=1920" 
+            src="https://i.postimg.cc/y8zbx7dT/FB-IMG-1778776967625.jpg" 
             alt="Cinematic Lash Detail"
             className="w-full h-full object-cover opacity-40 brightness-75 scale-110"
             referrerPolicy="no-referrer"
           />
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-matte-black/20 to-matte-black noir-vignette" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-matte-black/20 to-matte-black studio-vignette" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
@@ -29,7 +30,7 @@ export default function Hero() {
             transition={{ delay: 1, duration: 1 }}
             className="mb-8"
           >
-            <span className="text-[10px] kerning-widest uppercase text-rose-gold border-x border-rose-gold/30 px-6">Noir Edition Artistry</span>
+            <span className="text-[10px] kerning-widest uppercase text-rose-gold border-x border-rose-gold/30 px-6">Elite Lash Artistry</span>
           </motion.div>
           
           <h1 className="text-center">
@@ -62,20 +63,26 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="relative bg-white text-matte-black px-14 py-5 rounded-full text-[10px] uppercase tracking-[0.3em] font-sans font-black flex items-center group overflow-hidden"
+              <a 
+                href="https://www.fresha.com/book-now/pimp-my-brows-s9uywwe2/all-offer?share=true&pId=37621" 
+                target="_blank" 
+                rel="noopener noreferrer"
               >
-                <span className="relative z-10">Secure Your Slot</span>
-                <div className="absolute inset-0 bg-rose-gold translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
-                <ArrowRight className="ml-3 w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
-              </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="relative bg-white text-matte-black px-14 py-5 rounded-full text-[10px] uppercase tracking-[0.3em] font-sans font-black flex items-center group overflow-hidden"
+                >
+                  <span className="relative z-10">Secure Your Slot</span>
+                  <div className="absolute inset-0 bg-rose-gold translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+                  <ArrowRight className="ml-3 w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
+                </motion.button>
+              </a>
               
-              <div className="flex items-center space-x-4 opacity-40 hover:opacity-100 transition-opacity cursor-pointer">
-                <div className="w-12 h-[1px] bg-white" />
+              <Link to="/services" className="flex items-center space-x-4 opacity-40 hover:opacity-100 transition-opacity cursor-pointer group">
+                <div className="w-12 h-[1px] bg-white group-hover:w-16 transition-all" />
                 <span className="text-[9px] uppercase tracking-[0.4em] text-white">Full Services</span>
-              </div>
+              </Link>
             </div>
           </motion.div>
         </div>

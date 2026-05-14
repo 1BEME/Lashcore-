@@ -37,7 +37,7 @@ export default function SkincorePage() {
                     <div className="text-[10px] uppercase tracking-widest font-sans opacity-40">Efficacy</div>
                  </div>
                  <div className="text-center">
-                    <div className="text-3xl font-serif mb-1">Noir</div>
+                    <div className="text-3xl font-serif mb-1">Premium</div>
                     <div className="text-[10px] uppercase tracking-widest font-sans opacity-40">Standard</div>
                  </div>
               </div>
@@ -52,9 +52,10 @@ export default function SkincorePage() {
                className="rounded-[4rem] overflow-hidden aspect-[4/5] shadow-2xl luxury-mask"
              >
                 <img 
-                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=1200" 
+                  src="https://i.postimg.cc/q75jdr68/07891ab2f7a3a963d600df39a2fa22cd.jpg" 
                   alt="Skin Treatment" 
                   className="w-full h-full object-cover brightness-105"
+                  referrerPolicy="no-referrer"
                 />
              </motion.div>
              <div className="absolute top-10 -left-10 w-48 h-48 bg-white/80 backdrop-blur-3xl rounded-full flex flex-col items-center justify-center z-20 shadow-xl border border-white/20">
@@ -160,17 +161,17 @@ export default function SkincorePage() {
           <div className="grid md:grid-cols-2 gap-8">
              <div className="space-y-4">
                 <div className="rounded-[3rem] overflow-hidden aspect-[4/3] bg-nude-base/20 relative">
-                   <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1200" alt="Before and After" className="w-full h-full object-cover brightness-95 grayscale" />
+                   <img src="https://i.postimg.cc/8P4dSGqR/635bbef049c34c492a6b8c0bea0ca3ab.jpg" alt="Before and After" className="w-full h-full object-cover brightness-95 grayscale" referrerPolicy="no-referrer" />
                    <div className="absolute bottom-6 left-6 text-[10px] uppercase tracking-[0.3em] font-sans font-bold text-white bg-matte-black/50 px-4 py-2 rounded-full">Week 0</div>
                 </div>
                 <h4 className="font-serif text-xl italic px-4">Texture Correction Ritual</h4>
              </div>
              <div className="space-y-4 md:mt-24">
                 <div className="rounded-[3rem] overflow-hidden aspect-[4/3] bg-nude-base/20 relative">
-                   <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1200" alt="Before and After" className="w-full h-full object-cover brightness-110" />
+                   <img src="https://i.postimg.cc/bJVLphG4/c47523700dc463a708332b9f3165b127-(1).jpg" alt="Before and After" className="w-full h-full object-cover brightness-110" referrerPolicy="no-referrer" />
                    <div className="absolute bottom-6 left-6 text-[10px] uppercase tracking-[0.3em] font-sans font-bold text-white bg-rose-gold px-4 py-2 rounded-full">Week 6</div>
                 </div>
-                <h4 className="font-serif text-xl italic px-4">After noir signature facial series</h4>
+                <h4 className="font-serif text-xl italic px-4">After signature facial series</h4>
              </div>
           </div>
         </div>
@@ -182,12 +183,20 @@ export default function SkincorePage() {
           <h2 className="text-6xl md:text-[9rem] font-serif mb-12 tracking-tighter leading-none text-matte-black">
              Illuminate <br /> <span className="italic opacity-30">Your Essence</span>
           </h2>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            className="bg-matte-black text-white px-16 py-6 rounded-full text-[10px] uppercase tracking-[0.4em] font-sans font-black shadow-2xl"
+          <a 
+            href="https://wa.me/27846613711?text=Hi%20Lashcore,%20I'd%20like%20to%20request%20a%20skin%20consultation."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
           >
-            Request Skin Consultation
-          </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-matte-black text-white px-16 py-6 rounded-full text-[10px] uppercase tracking-[0.4em] font-sans font-black shadow-2xl"
+            >
+              Request Skin Consultation
+            </motion.button>
+          </a>
         </div>
       </section>
     </motion.div>

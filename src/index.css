@@ -9,7 +9,7 @@
   --color-nude-light: #FDF8F5;
   --color-nude-base: #F5E6DA;
   --color-nude-dark: #DCC3B0;
-  --color-matte-black: #0F0F0F; /* Deeper Noir Black */
+  --color-matte-black: #0F0F0F; /* Studio Black */
   --color-rose-gold: #B76E79;
 }
 
@@ -46,7 +46,7 @@
     clip-path: ellipse(50% 50% at 50% 50%);
   }
 
-  .noir-vignette {
+  .studio-vignette {
     box-shadow: inset 0 0 100px rgba(0,0,0,0.4);
   }
 

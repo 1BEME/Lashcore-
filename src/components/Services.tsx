@@ -3,6 +3,8 @@ import { SERVICES } from '../constants';
 import { ArrowRight } from 'lucide-react';
 
 export default function Services() {
+  const freshaLink = "https://www.fresha.com/book-now/pimp-my-brows-s9uywwe2/all-offer?share=true&pId=37621";
+
   return (
     <section id="services" className="py-24 md:py-32 silk-bg">
       <div className="max-w-7xl mx-auto px-6">
@@ -23,7 +25,7 @@ export default function Services() {
           </div>
           <div className="mt-8 md:mt-0 flex items-end h-full">
             <p className="font-body font-light text-slate-400 max-w-xs leading-loose text-sm italic">
-              "Every blink is a masterpiece." — Discover the Noir collection.
+              "Every blink is a masterpiece." — Discover the Lashcore artistry.
             </p>
           </div>
         </div>
@@ -38,17 +40,17 @@ export default function Services() {
               transition={{ delay: index * 0.1, duration: 1 }}
               className={`md:col-span-6 lg:col-span-4 ${index % 2 !== 0 ? 'lg:mt-24' : ''}`}
             >
-              <div className="group cursor-pointer">
+              <a href={freshaLink} target="_blank" rel="noopener noreferrer" className="group block">
                 <div className="relative overflow-hidden luxury-mask mb-8 aspect-[3/4] bg-nude-base/10 shadow-inner">
                   <img 
-                    src={`https://images.unsplash.com/photo-1583001809270-7a02299a9e64?auto=format&fit=crop&q=80&w=800&sig=${index + 20}`}
+                    src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover grayscale brightness-105 hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute top-6 left-6">
                     <span className="text-[9px] text-white bg-matte-black/40 backdrop-blur-md px-4 py-2 rounded-full uppercase tracking-widest font-sans opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      Signature Noir
+                      Lashcore Signature
                     </span>
                   </div>
                 </div>
@@ -72,7 +74,7 @@ export default function Services() {
                     </motion.div>
                   </div>
                 </div>
-              </div>
+              </a>
             </motion.div>
           ))}
         </div>
@@ -80,4 +82,5 @@ export default function Services() {
     </section>
   );
 }
+
 

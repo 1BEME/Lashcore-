@@ -27,7 +27,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="text-[10px] uppercase tracking-[0.6em] text-rose-gold mb-6 block font-sans font-bold"
               >
-                The Noir Philosophy
+                The Lashcore Philosophy
               </motion.span>
                <h2 className="text-4xl md:text-7xl lg:text-9xl font-serif tracking-tighter leading-[0.8] mb-8">
                  Crafting <span className="italic opacity-50">Icons</span>
@@ -46,9 +46,10 @@ export default function Home() {
                 className="rounded-[3rem] overflow-hidden aspect-[16/9] shadow-2xl relative z-10 luxury-mask"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=1200"
+                  src="https://i.postimg.cc/2Smz4R6H/086bbec6b3adde7227ac78cb2fd9986e.jpg"
                   alt="High Fashion Lash"
                   className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000"
+                  referrerPolicy="no-referrer"
                 />
               </motion.div>
               <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-nude-base -z-0 rounded-full blur-[60px] opacity-30" />
@@ -79,9 +80,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: 'Lashcore', desc: 'Elite eyelash extensions.', link: '/services', img: 'https://images.unsplash.com/photo-1583001809270-7a02299a9e64?auto=format&fit=crop&q=80&w=800' },
-              { title: 'Skincore', desc: 'Clinical skin rituals.', link: '/skincore', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800' },
-              { title: 'Academy', desc: 'Master the lash art.', link: '/academy', img: 'https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=800' }
+              { title: 'Lashcore', desc: 'Elite eyelash extensions.', link: '/services', img: 'https://i.postimg.cc/sgvvBC0w/FB-IMG-1778776830476.jpg' },
+              { title: 'Skincore', desc: 'Clinical skin rituals.', link: '/skincore', img: 'https://i.postimg.cc/FR6bwVq8/665b1d3b202669f5d7cf611892492e52.jpg' },
+              { title: 'Academy', desc: 'Master the lash art.', link: '/academy', img: 'https://i.postimg.cc/jSZ4TTJS/FB-IMG-1778776848911.jpg' }
             ].map((dept, i) => (
               <Link key={i} to={dept.link} className="group relative overflow-hidden rounded-[2.5rem] aspect-[4/5] block">
                 <img src={dept.img} alt={dept.title} className="w-full h-full object-cover transition-all duration-1000 grayscale group-hover:grayscale-0 group-hover:scale-110" />
@@ -106,7 +107,7 @@ export default function Home() {
       
       <Testimonials />
       
-      {/* Bottom CTA Noir Style */}
+      {/* Bottom CTA Lashcore Style */}
       <section className="py-40 bg-matte-black text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
           <motion.div

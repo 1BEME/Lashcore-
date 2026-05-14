@@ -20,7 +20,7 @@ export default function GalleryPage() {
       <section className="py-24 bg-nude-light text-center">
         <div className="max-w-7xl mx-auto px-6">
           <h3 className="text-3xl font-serif italic mb-8">Want your transformation featured?</h3>
-          <p className="mb-12 font-body text-slate-500">Capture your new look and tag us @LASHCORE_SA for a chance to be showcased.</p>
+          <p className="mb-12 font-body text-slate-500">Capture your new look and tag us @LASHCORE_CPT for a chance to be showcased.</p>
         </div>
       </section>
     </motion.div>

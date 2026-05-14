@@ -25,7 +25,8 @@ export default function Navbar() {
     { name: 'Contact', href: '/contact' },
   ];
 
-  const isDark = location.pathname === '/' && !isScrolled;
+  const darkPaths = ['/', '/services', '/contact', '/academy'];
+  const isDark = darkPaths.includes(location.pathname) && !isScrolled;
 
   return (
     <nav 
@@ -38,9 +39,9 @@ export default function Navbar() {
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-3"
           >
-            <span className="font-serif text-2xl tracking-widest font-bold">LASHCORE</span>
+            {/* Logo removed as per user request */}
           </motion.div>
         </Link>
 

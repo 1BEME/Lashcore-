@@ -22,16 +22,16 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-12 text-center">
             <div>
-              <div className="text-5xl font-serif text-rose-gold mb-4 italic">Vision</div>
-              <p className="text-sm opacity-60 leading-relaxed uppercase tracking-wider font-sans">Empowering confidence through meticulously crafted aesthetics.</p>
+              <div className="text-5xl font-serif text-rose-gold mb-4 italic">Experience</div>
+              <p className="text-sm opacity-60 leading-relaxed uppercase tracking-wider font-sans">A team of 5+ master artists offering one-of-a-kind experiences.</p>
             </div>
             <div>
               <div className="text-5xl font-serif text-rose-gold mb-4 italic">Mission</div>
-              <p className="text-sm opacity-60 leading-relaxed uppercase tracking-wider font-sans">To set the gold standard in South African lash artistry.</p>
+              <p className="text-sm opacity-60 leading-relaxed uppercase tracking-wider font-sans">A friendly and relaxed salon where everyone is welcome — offering long-lasting results using the highest quality materials.</p>
             </div>
             <div>
-              <div className="text-5xl font-serif text-rose-gold mb-4 italic">Values</div>
-              <p className="text-sm opacity-60 leading-relaxed uppercase tracking-wider font-sans">Integrity, continuous education, and unparalleled client care.</p>
+              <div className="text-5xl font-serif text-rose-gold mb-4 italic">Standards</div>
+              <p className="text-sm opacity-60 leading-relaxed uppercase tracking-wider font-sans">Clinically precise lash health is our top priority, ensuring your natural lashes thrive.</p>
             </div>
           </div>
         </div>

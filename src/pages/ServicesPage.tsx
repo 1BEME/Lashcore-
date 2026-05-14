@@ -37,9 +37,10 @@ export default function ServicesPage() {
             </div>
             <div className="rounded-[3rem] overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=800"
+                src="https://i.postimg.cc/HkX1vSJ6/FB-IMG-1778776821316.jpg"
                 alt="Lash Care"
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>

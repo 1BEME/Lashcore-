@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 
 export default function About() {
@@ -14,7 +15,7 @@ export default function About() {
               className="relative z-10 rounded-[4rem] overflow-hidden aspect-[4/5] shadow-2xl"
             >
               <img 
-                src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=1000" 
+                src="https://i.postimg.cc/T39CPmBf/FB-IMG-1778776905165.jpg" 
                 alt="Studio Atmosphere"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -32,8 +33,8 @@ export default function About() {
               transition={{ delay: 0.5, duration: 1 }}
               className="absolute -bottom-10 -right-10 bg-matte-black text-white p-10 rounded-3xl z-20 hidden lg:block"
             >
-              <div className="text-4xl font-serif mb-2">5000+</div>
-              <div className="text-[10px] uppercase tracking-[0.2em] font-sans opacity-60">Lashes Perfected</div>
+              <div className="text-4xl font-serif mb-2">25,480+</div>
+              <div className="text-[10px] uppercase tracking-[0.2em] font-sans opacity-60">Perfect Procedures</div>
             </motion.div>
           </div>
 
@@ -50,32 +51,34 @@ export default function About() {
               Beyond the <br /> <span className="italic">Mirror</span>
             </h2>
             <p className="font-body font-light text-slate-600 text-lg leading-relaxed mb-8">
-              Founded on the belief that beauty is a feeling as much as a visual statement, Lashcore has become South Africa's premier destination for refined lash artistry.
+              Lashcore was launched in 2014 by Ilhaam, bringing over 15 years of technical expertise to Rondebosch East. Located just 1-minute from the M5, what started as a dedicated threading practice has evolved into Cape Town's premier destination for refined lash and brow artistry.
             </p>
             <p className="font-body font-light text-slate-500 leading-relaxed mb-12">
-              Our studio provides a serene escape from the everyday. We combine technical precision with a deep understanding of aesthetics to create results that aren't just "extensions"—they are personal enhancements that reflect your unique character.
+              Our studio provides a serene escape where technical precision meets a deep understanding of aesthetics. With 12+ years of specialized lashing experience and a team of 5+ master artists, we create bespoke enhancements that reflect your unique character.
             </p>
             
             <div className="grid grid-cols-2 gap-8 py-8 border-y border-slate-100">
               <div>
-                <h4 className="font-serif text-xl mb-2">Premium Materials</h4>
-                <p className="text-xs font-body text-slate-400">We exclusively use medical-grade adhesives and the softest faux-mink fibers.</p>
+                <h4 className="font-serif text-xl mb-2">12+ Years</h4>
+                <p className="text-xs font-body text-slate-400">Specialized lash extension mastery and clinical precision.</p>
               </div>
               <div>
-                <h4 className="font-serif text-xl mb-2">Artistry Driven</h4>
-                <p className="text-xs font-body text-slate-400">Our artists undergo rigorous training regularly to master the latest techniques.</p>
+                <h4 className="font-serif text-xl mb-2">15+ Years</h4>
+                <p className="text-xs font-body text-slate-400">Master threading experience refined since the age of 14.</p>
               </div>
             </div>
 
-            <motion.button
-              whileHover={{ x: 10 }}
-              className="mt-12 flex items-center space-x-4 group"
-            >
-              <div className="w-12 h-12 rounded-full bg-nude-base flex items-center justify-center group-hover:bg-rose-gold transition-colors">
-                <div className="w-4 h-[1px] bg-matte-black" />
-              </div>
-              <span className="text-xs uppercase tracking-[0.3em] font-sans">Read Our Full Story</span>
-            </motion.button>
+            <Link to="/about">
+              <motion.button
+                whileHover={{ x: 10 }}
+                className="mt-12 flex items-center space-x-4 group cursor-pointer"
+              >
+                <div className="w-12 h-12 rounded-full bg-nude-base flex items-center justify-center group-hover:bg-rose-gold transition-colors">
+                  <div className="w-4 h-[1px] bg-matte-black group-hover:bg-white transition-colors" />
+                </div>
+                <span className="text-xs uppercase tracking-[0.3em] font-sans">Read Our Full Story</span>
+              </motion.button>
+            </Link>
           </motion.div>
         </div>
       </div>
