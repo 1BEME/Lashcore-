@@ -80,13 +80,19 @@ export default function CoursesPage() {
                     </div>
                   </div>
 
-                  <motion.button
-                    onClick={() => window.open('https://wa.me/27846613711?text=Hi%20Lashcore,%20I\'d%20like%20to%20enroll%20in%20the%20' + encodeURIComponent(course.title) + '.', '_blank')}
-                    whileHover={{ scale: 1.02 }}
-                    className="w-full py-5 border border-matte-black text-matte-black rounded-2xl text-[10px] uppercase tracking-widest font-sans font-black hover:bg-matte-black hover:text-white transition-all duration-500"
+                  <a
+                    href={'https://wa.me/27846613711?text=Hi%20Lashcore,%20I\'d%20like%20to%20enroll%20in%20the%20' + encodeURIComponent(course.title) + '.'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
                   >
-                    Enroll Now
-                  </motion.button>
+                    <motion.button
+                      whileHover={{ scale: 1.02 }}
+                      className="w-full py-5 border border-matte-black text-matte-black rounded-2xl text-[10px] uppercase tracking-widest font-sans font-black hover:bg-matte-black hover:text-white transition-all duration-500"
+                    >
+                      Enroll Now
+                    </motion.button>
+                  </a>
                 </div>
               </motion.div>
             ))}
@@ -176,13 +182,18 @@ export default function CoursesPage() {
       <section className="py-40 bg-matte-black text-white text-center">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl md:text-8xl font-serif mb-12 tracking-tighter leading-none italic opacity-90">Begin Your Journey</h2>
-          <motion.button
-            onClick={() => window.open('https://wa.me/27846613711?text=Hi%20Lashcore,%20I\'d%20like%20to%20apply%20for%20the%20Academy%202026.', '_blank')}
-            whileHover={{ scale: 1.05 }}
-            className="bg-white text-matte-black px-16 py-6 rounded-full text-[10px] uppercase tracking-[0.4em] font-sans font-black shadow-2xl"
+          <a
+            href="https://wa.me/27846613711?text=Hi%20Lashcore,%20I\'d%20like%20to%20apply%20for%20the%20Academy%202026."
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Apply for Academy 2026
-          </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              className="bg-white text-matte-black px-16 py-6 rounded-full text-[10px] uppercase tracking-[0.4em] font-sans font-black shadow-2xl"
+            >
+              Apply for Academy 2026
+            </motion.button>
+          </a>
         </div>
       </section>
     </motion.div>

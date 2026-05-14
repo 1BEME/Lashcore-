@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { ShieldCheck, Clock, CreditCard, ParkingCircle, AlertCircle, Sparkles, Coffee, Smile } from 'lucide-react';
 
 export default function PoliciesPage() {
@@ -129,8 +130,8 @@ export default function PoliciesPage() {
           <h3 className="font-serif text-3xl italic mb-6">Ready for your transformation?</h3>
           <p className="opacity-60 font-light mb-10 text-sm tracking-widest uppercase">Select your ritual below</p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">
-             <a href="/contact" className="px-10 py-4 bg-rose-gold text-white rounded-full font-bold text-xs uppercase tracking-widest hover:scale-105 transition-transform">Book Now</a>
-             <a href="/services" className="px-10 py-4 border border-white/20 text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-matte-black transition-all">View Services</a>
+             <Link to="/contact" className="px-10 py-4 bg-rose-gold text-white rounded-full font-bold text-xs uppercase tracking-widest hover:scale-105 transition-transform">Book Now</Link>
+             <Link to="/services" className="px-10 py-4 border border-white/20 text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-matte-black transition-all">View Services</Link>
           </div>
         </motion.div>
       </div>

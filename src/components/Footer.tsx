@@ -36,7 +36,7 @@ export default function Footer() {
                <div className="h-[1px] w-12 bg-rose-gold/30" />
                <div className="flex space-x-4">
                   <Link to="/policies" className="text-[10px] uppercase tracking-widest opacity-40 font-bold hover:opacity-100 transition-opacity">Policies</Link>
-                  <a href="#" className="text-[10px] uppercase tracking-widest opacity-40 font-bold hover:opacity-100 transition-opacity">Terms</a>
+                  <Link to="/policies" className="text-[10px] uppercase tracking-widest opacity-40 font-bold hover:opacity-100 transition-opacity">Terms</Link>
                </div>
             </div>
           </div>
