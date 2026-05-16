@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { TESTIMONIALS } from '../constants';
+import { TESTIMONIALS } from './constants';
 import { Star } from 'lucide-react';
 
 export default function Testimonials() {

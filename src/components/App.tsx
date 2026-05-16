@@ -6,21 +6,22 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
-import ScrollToTop from './components/ScrollToTop';
-import CustomCursor from './components/CustomCursor';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import WhatsAppButton from './WhatsAppButton';
+import ScrollToTop from './ScrollToTop';
+import CustomCursor from './CustomCursor';
 
 // Pages
-import Home from './pages/Home';
-import ServicesPage from './pages/ServicesPage';
-import AboutPage from './pages/AboutPage';
-import GalleryPage from './pages/GalleryPage';
-import ContactPage from './pages/ContactPage';
-import CoursesPage from './pages/CoursesPage';
-import SkincorePage from './pages/SkincorePage';
-import PoliciesPage from './pages/PoliciesPage';
+import Home from '../pages/Home';
+import ServicesPage from '../pages/ServicesPage';
+import AboutPage from '../pages/AboutPage';
+import GalleryPage from '../pages/GalleryPage';
+import ContactPage from '../pages/ContactPage';
+import CoursesPage from '../pages/CoursesPage';
+import SkincorePage from '../pages/SkincorePage';
+import MentoringPage from '../pages/MentoringPage';
+import PoliciesPage from '../pages/PoliciesPage';
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -88,6 +89,7 @@ function AppContent() {
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/academy" element={<CoursesPage />} />
                 <Route path="/skincore" element={<SkincorePage />} />
+                <Route path="/mentoring" element={<MentoringPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/policies" element={<PoliciesPage />} />
               </Routes>

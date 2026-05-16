@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { SERVICES } from '../constants';
+import { SERVICES } from './constants';
 import { ArrowRight } from 'lucide-react';
 
 export default function Services() {
@@ -58,7 +58,6 @@ export default function Services() {
                 <div className="space-y-4 md:space-y-6 px-2">
                   <div className="flex justify-between items-baseline border-b border-black/5 pb-4">
                     <h3 className="text-2xl md:text-3xl font-serif font-light">{service.title}</h3>
-                    <span className="text-lg md:text-xl font-serif text-rose-gold">{service.price}</span>
                   </div>
                   <p className="text-xs md:text-sm font-body text-slate-500 font-light leading-relaxed">
                     {service.description}

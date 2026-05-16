@@ -19,6 +19,7 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Skincore', href: '/skincore' },
+    { name: 'Mentoring', href: '/mentoring' },
     { name: 'Services', href: '/services' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Academy', href: '/academy' },

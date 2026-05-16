@@ -3,9 +3,9 @@ import { Instagram } from 'lucide-react';
 
 const GALLERY_IMAGES = [
   { url: 'https://i.postimg.cc/y8zbx7dT/FB-IMG-1778776967625.jpg' },
-  { url: 'https://i.postimg.cc/cCnF1zGJ/FB-IMG-1778776950564.jpg' },
+  { url: 'https://i.postimg.cc/13XwBfMp/7c05311ad2cdeed8cb674fb9643d48f4.jpg' },
   { url: 'https://i.postimg.cc/T39CPmBf/FB-IMG-1778776905165.jpg' },
-  { url: 'https://i.postimg.cc/sx7JCZ5J/FB-IMG-1778776873825.jpg' },
+  { url: 'https://i.postimg.cc/mg1hhM8y/ca203b2d7a1526d17c34647e85caa74c.jpg' },
   { url: 'https://i.postimg.cc/jSZ4TTJS/FB-IMG-1778776848911.jpg' },
   { url: 'https://i.postimg.cc/9QBnKsBg/6a3950a4be5dcfb4252c90b882f59e90.jpg' },
   { url: 'https://i.postimg.cc/sgvvBC0w/FB-IMG-1778776830476.jpg' },

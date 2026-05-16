@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { COURSES } from '../constants';
+import { COURSES } from '../components/constants';
 import { CheckCircle2, ArrowRight, GraduationCap, Award, Users } from 'lucide-react';
 
 export default function CoursesPage() {
@@ -67,7 +67,6 @@ export default function CoursesPage() {
                 <div className="px-6 pb-8 flex-grow">
                   <div className="flex justify-between items-start mb-6">
                     <h3 className="text-3xl font-serif leading-tight">{course.title}</h3>
-                    <span className="text-lg font-serif text-rose-gold">{course.price}</span>
                   </div>
                   <p className="text-sm font-body text-slate-500 font-light leading-relaxed mb-8">
                     {course.description}

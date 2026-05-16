@@ -43,12 +43,12 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
-                className="rounded-[3rem] overflow-hidden aspect-[16/9] shadow-2xl relative z-10 luxury-mask"
+                className="aspect-square relative z-10"
               >
                 <img 
-                  src="https://i.postimg.cc/2Smz4R6H/086bbec6b3adde7227ac78cb2fd9986e.jpg"
-                  alt="High Fashion Lash"
-                  className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000"
+                  src="https://i.postimg.cc/vTvf9xFp/IMG-20260514-WA0000(3).jpg"
+                  alt="Lashcore Logo"
+                  className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
                 />
               </motion.div>
